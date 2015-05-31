@@ -109,4 +109,5 @@ usepeerdns
 ### Faça restart do xl2tp e ipsec para aplicar as alterações:
 
 $ sudo /etc/init.d/ipsec restart
+
 $ sudo /etc/init.d/xl2tp restart
