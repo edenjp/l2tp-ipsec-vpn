@@ -8,7 +8,9 @@
 ### Pacotes requeridos:
 
 $ sudo apt-get install openswan
+
 $ sudo apt-get install xl2tpd
+
 $ sudo apt-get install l2tp-ipsec-vpn
 
 Caso não seja possível encontrar os pacotes, faça clone dos arquivos disponível neste github. 
