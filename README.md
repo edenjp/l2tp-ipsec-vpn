@@ -24,9 +24,9 @@ $ git clone [url]
 
 Após isto, instale os arquivos do diretório:
 
-$ sudo dpkg -i openswan*.deb --force-all
+$ sudo dpkg -i openswan*.deb 
 
-$ sudo dpkg -i *.deb --force-all
+$ sudo dpkg -i *.deb
 
 
 Passo 2 - Execute o L2TP Ipsec VPN Applet
