@@ -61,6 +61,7 @@ Passo 11 - Para conectar basta clicar em SuaVPN - pode demorar por volta de 30 s
 
 $ sudo vim /etc/ppp/<Sua_VPN>.options.xl2tpd
 
+```
 # /etc/ppp/SuaVPN.options.xl2tpd - Options used by PPP when a connection is made by an L2TP daemon
 # $Id$
 
@@ -102,7 +103,7 @@ name "<Seu_usuário>"
 password "<Sua_Senha>"
 
 usepeerdns
-
+```
 
 
 ### Faça restart do xl2tp e ipsec para aplicar as alterações:
