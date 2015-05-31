@@ -1,0 +1,45 @@
+# /etc/ppp/SuaVPN.options.xl2tpd - Options used by PPP when a connection is made by an L2TP daemon
+# $Id$
+
+# Manual: PPPD(8)
+
+# Created: sáb mai 30 22:57:50 2015
+#      by: The L2TP IPsec VPN Manager application version 1.0.9
+#
+# WARNING! All changes made in this file will be lost!
+
+#debug
+#dump
+#record /var/log/pppd
+
+plugin passprompt.so
+ipcp-accept-local
+ipcp-accept-remote
+idle 72000
+ktune
+noproxyarp
+asyncmap 0
+noauth
+crtscts
+lock
+hide-password
+modem
+noipx
+
+ipparam L2tpIPsecVpn-SuaVPN
+
+promptprog "/usr/bin/L2tpIPsecVpn"
+
+refuse-eap
+refuse-pap
+refuse-chap
+
+remotename ""
+name "<Seu_usuário>"
+password "<Sua_Senha>"
+
+usepeerdns
+
+
+
+
