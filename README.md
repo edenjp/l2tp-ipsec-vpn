@@ -16,7 +16,7 @@ $ sudo apt-get install l2tp-ipsec-vpn
 Caso não seja possível encontrar os pacotes, faça clone dos arquivos disponível neste github. 
 
 
-## Configurando o  l2tp-ipsec-vpn
+### Configurando o  l2tp-ipsec-vpn
 
 Passo 1 - Baixe os arquivos deste diretório.
 
@@ -112,4 +112,4 @@ usepeerdns
 
 $ sudo /etc/init.d/ipsec restart
 
-$ sudo /etc/init.d/xl2tp restart
+$ sudo /etc/init.d/xl2tpd restart
