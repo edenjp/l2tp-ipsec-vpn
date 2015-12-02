@@ -13,6 +13,8 @@ $ sudo `apt-get install xl2tpd`
 
 $ sudo `apt-get install l2tp-ipsec-vpn`
 
+conclua com `reboot` da máquina 
+
 Caso não seja possível encontrar os pacotes, faça clone dos arquivos disponível neste github. 
 
 
