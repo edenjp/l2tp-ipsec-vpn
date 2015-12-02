@@ -7,18 +7,18 @@
 
 ### Pacotes requeridos:
 
-$ sudo apt-get install openswan
+$ sudo `apt-get install openswan`
 
-$ sudo apt-get install xl2tpd
+$ sudo `apt-get install xl2tpd`
 
-$ sudo apt-get install l2tp-ipsec-vpn
+$ sudo `apt-get install l2tp-ipsec-vpn`
 
 Caso não seja possível encontrar os pacotes, faça clone dos arquivos disponível neste github. 
 
 
-### Configurando o  l2tp-ipsec-vpn
+>  Configurando o  l2tp-ipsec-vpn
 
-Passo 1 - Baixe os arquivos deste diretório.
+`Passo 1` - Baixe os arquivos deste diretório.
 
 $ git clone [url]
 
@@ -29,39 +29,39 @@ $ sudo dpkg -i openswan*.deb
 $ sudo dpkg -i *.deb
 
 
-Passo 2 - Execute o L2TP Ipsec VPN Applet
+`Passo 2` - Execute o **L2TP Ipsec VPN Applet**
 
 
-Passo 3 - No novo ícone disponível, clique em Edit Connections
+`Passo 3` - No novo ícone disponível, clique em **Edit Connections**
 
 
-Passo 4 - Clique em Add
+`Passo 4` - Clique em **Add**
 
 
-Passo 5 - Preencha com nome da "SuaVPN" e clique em OK
+`Passo 5` - Preencha com nome da "SuaVPN" e clique em OK
 
 
-Passo 6 - Selecione "SuaVPN" e clique em Edit
+`Passo 6` - Selecione "SuaVPN" e clique em **Edit**
 
 
-Passo 7 - Na aba IPsec preencha os campos, use a pre-shared key  XXXXXXXXXXXXXXXXXXXXXXXX
+`Passo 7` - Na aba IPsec preencha os campos, use a pre-shared key do seu servidor  XXXXXXXXXXXXXXXXXXXXXXXX
 
 
-Passo 8 - Na aba L2TP habilite o Length Bit
+`Passo 8` - Na aba **L2TP** habilite o **Length Bit**
 
 
-Passo 9 - Na aba PPP preencha os campos
+`Passo 9` - Na aba PPP  máquina **Allow these protocols** e preencha os campos de **user name** e **password**
 
 
-Passo 10 - Cilque em IP Settings e habilite Obtain DNS server address automatically e finalize as configurações
+`Passo 10` - Clique em **IP Settings** e habilite **Obtain DNS server address automatically** , depois  finalize as configurações
 
 
-Passo 11 - Para conectar basta clicar em SuaVPN - pode demorar por volta de 30 segundos
+`Passo 11` - Para conectar basta clicar na sua  SuaVPN ( * *pode demorar por volta de 30 segundos* ) 
 
 ### Caso ainda tenha alguma dificuldade configure sua VPN conforme o exemplo 
 
 
-$ sudo vim /etc/ppp/<Sua_VPN>.options.xl2tpd
+$ `sudo vim /etc/ppp/<Sua_VPN>.options.xl2tpd`
 
 ```
 # /etc/ppp/SuaVPN.options.xl2tpd - Options used by PPP when a connection is made by an L2TP daemon
@@ -110,6 +110,7 @@ usepeerdns
 
 ### Faça restart do xl2tp e ipsec para aplicar as alterações:
 
-$ sudo /etc/init.d/ipsec restart
+$ `sudo /etc/init.d/ipsec restart`
 
-$ sudo /etc/init.d/xl2tpd restart
+$ `sudo /etc/init.d/xl2tpd restart`
+
